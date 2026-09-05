@@ -47,9 +47,9 @@
 
 /* 2. Nautilus Specific Overrides */
 
-/* JetBrains Mono, ridimensionamento all'85% e pulizia bordi Libadwaita */
+/* Dynamic font hook placeholder, ridimensionamento all'85% e pulizia bordi Libadwaita */
 window.nautilus-window {
-    font-family: "JetBrainsMono", "JetBrains Mono", monospace;
+    font-family: 'Placeholder', monospace;
     font-size: 85%;
     --headerbar-border-color: transparent;
     --headerbar-shade-color: transparent;
@@ -69,24 +69,22 @@ window.nautilus-window separator {
     min-width: 1px;
 }
 
-/* Main View (85%) */
+/* Main View */
 window.nautilus-window,
 window.nautilus-window base,
 .nautilus-window notebook,
 .nautilus-window view {
     background-color: @view_bg_color;
     color: @view_fg_color;
-    font-size: 85%;
 }
 
-/* Top Bar (85%) */
+/* Top Bar */
 window.nautilus-window headerbar,
 window.nautilus-window .titlebar {
     background-color: @headerbar_bg_color;
     color: @headerbar_fg_color;
     border: none;
     box-shadow: none;
-    font-size: 85%;
 }
 
 .nautilus-path-bar button {
@@ -101,51 +99,50 @@ window.nautilus-window .titlebar {
     border-radius: 0;
 }
 
-/* Sidebar (85%) */
-.nautilus-window placessidebar {
+/* Sidebar */
+window.nautilus-window placessidebar {
     background-color: @sidebar_bg_color;
     color: @sidebar_fg_color;
-    font-size: 85%;
 }
-.nautilus-window placessidebar row {
+window.nautilus-window placessidebar row {
     border-radius: 0;
 }
-.nautilus-window placessidebar row:selected {
+window.nautilus-window placessidebar row:selected {
     background-color: alpha(@accent_bg_color, 0.15);
     color: @accent_color;
     font-weight: normal;
     border-radius: 0;
 }
-.nautilus-window placessidebar row:hover:not(:selected) {
+window.nautilus-window placessidebar row:hover:not(:selected) {
     background-color: alpha(@headerbar_border_color, 0.2);
     border-radius: 0;
 }
 
 /* Main View items / folders (Grid, List, Column views, and Icon View / Grid cells) */
-.nautilus-window flowboxchild,
-.nautilus-window .nautilus-view-kanban .card,
-.nautilus-window gridview child,
-.nautilus-window columnview row,
-.nautilus-window listview row,
-.nautilus-window .view item {
+window.nautilus-window flowboxchild,
+window.nautilus-window .nautilus-view-kanban .card,
+window.nautilus-window gridview child,
+window.nautilus-window columnview row,
+window.nautilus-window listview row,
+window.nautilus-window .view item {
     border-radius: 0;
 }
 
-.nautilus-window flowboxchild:hover,
-.nautilus-window gridview child:hover,
-.nautilus-window columnview row:hover,
-.nautilus-window listview row:hover,
-.nautilus-window .view item:hover {
+window.nautilus-window flowboxchild:hover,
+window.nautilus-window gridview child:hover,
+window.nautilus-window columnview row:hover,
+window.nautilus-window listview row:hover,
+window.nautilus-window .view item:hover {
     background-color: alpha(@headerbar_border_color, 0.2);
     border-radius: 0;
 }
 
-.nautilus-window flowboxchild:selected,
-.nautilus-window gridview child:selected,
-.nautilus-window treeview:selected,
-.nautilus-window columnview row:selected,
-.nautilus-window listview row:selected,
-.nautilus-window .view item:selected {
+window.nautilus-window flowboxchild:selected,
+window.nautilus-window gridview child:selected,
+window.nautilus-window treeview:selected,
+window.nautilus-window columnview row:selected,
+window.nautilus-window listview row:selected,
+window.nautilus-window .view item:selected {
     background-color: alpha(@accent_bg_color, 0.15);
     color: @window_fg_color;
     border-radius: 0;
@@ -159,31 +156,31 @@ rubberband, .rubberband {
     border-radius: 0;
 }
 
-.nautilus-window button:not(.flat):not(.suggested-action):not(.destructive-action) {
+window.nautilus-window button:not(.flat):not(.suggested-action):not(.destructive-action) {
     background-color: @card_bg_color;
     color: @window_fg_color;
     border: 1px solid @headerbar_border_color;
     border-radius: 0;
 }
-.nautilus-window button:hover:not(.flat) {
+window.nautilus-window button:hover:not(.flat) {
     background-color: shade(@card_bg_color, 1.5); 
     color: @window_fg_color;
     border-radius: 0;
 }
-.nautilus-window button:checked,
-.nautilus-window button:active {
+window.nautilus-window button:checked,
+window.nautilus-window button:active {
     background-color: @accent_bg_color;
     color: @accent_fg_color;
     border-radius: 0;
 }
 
-.nautilus-window entry {
+window.nautilus-window entry {
     background-color: @sidebar_bg_color;
     color: @window_fg_color;
     border: 1px solid @headerbar_border_color;
     border-radius: 0;
 }
-.nautilus-window entry:focus {
+window.nautilus-window entry:focus {
     border-color: @accent_color;
     box-shadow: 0 0 0 2px alpha(@accent_color, 0.3);
     border-radius: 0;
@@ -198,3 +195,6 @@ scrollbar slider:active {
     background-color: @accent_color;
     border-radius: 0;
 }
+
+box {
+border-radius:0px;}
