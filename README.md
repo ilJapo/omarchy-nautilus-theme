@@ -1,5 +1,7 @@
 # Omarchy Quattro Dynamic Nautilus Theme
 
+<img width="2560" height="1600" alt="screenshot-2026-09-05_01-27-26" src="https://github.com/user-attachments/assets/69b3c0f7-43ab-47d2-b2ac-8922d4bc00d0" />
+
 A dynamic GTK4 CSS template for the Nautilus file manager, designed specifically for the Omarchy Quattro desktop environment.
 
 Whenever you switch your Omarchy theme, this template automatically generates a new GTK4 stylesheet to match your system's background, foreground, and accent colors. It also keeps Nautilus in sync with your live system font, and forces the running Nautilus process to reload the new stylesheet immediately — no manual restart, no logout.
@@ -73,5 +75,6 @@ From that point on, switching your Omarchy theme or changing your system font bo
 
 ## Notes
 
+* **This script extends theme integration to all GTK4/Libadwaita applications,** perfectly matching them to your active Omarchy theme. If you want other GNOME applications to automatically restart and apply the new theme, you can simply add them to the hook script.
 * Requires GTK4 (GNOME 43+).
 * `gtk.css.tpl` bundles JetBrains Mono as its default; the refresh script immediately overwrites that with your live system font on every run, so having the font installed is only needed if you don't run the hooks (i.e. a purely static install).
