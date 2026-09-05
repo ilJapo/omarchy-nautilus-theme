@@ -1,6 +1,7 @@
 # Omarchy Quattro Dynamic Nautilus Theme
 
-<img width="2560" height="1600" alt="screenshot-2026-09-05_01-27-26" src="https://github.com/user-attachments/assets/69b3c0f7-43ab-47d2-b2ac-8922d4bc00d0" />
+<img width="1920" height="1200" alt="ezgif-7af637205217c376" src="https://github.com/user-attachments/assets/43930b3c-d63d-4871-b1f2-209c7999c8bd" />
+
 
 A dynamic GTK4 CSS template for the Nautilus file manager, designed specifically for the Omarchy Quattro desktop environment.
 
