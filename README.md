@@ -79,3 +79,11 @@ From that point on, switching your Omarchy theme or changing your system font bo
 * **This script extends theme integration to all GTK4/Libadwaita applications,** perfectly matching them to your active Omarchy theme. If you want other GNOME applications to automatically restart and apply the new theme, you can simply add them inside `/.config/omarchy/hooks/theme-set.d/nautilus-theme-set.sh` and `/.config/omarchy/hooks/theme-set.d/nautilus-font-set.sh`.
 * Requires GTK4 (GNOME 43+).
 * `gtk.css.tpl` bundles JetBrains Mono as its default; the refresh script immediately overwrites that with your live system font on every run, so having the font installed is only needed if you don't run the hooks (i.e. a purely static install).
+
+
+
+| BEFORE | AFTER |
+| :---: | :---: |
+| <img width="768" height="480" alt="screenshot-2026-09-05_01-33-00" src="https://github.com/user-attachments/assets/749c0b12-6348-4876-b779-42dcfda2853f" /> | <img width="768" height="480" alt="screenshot-2026-09-05_01-27-26" src="https://github.com/user-attachments/assets/9d8266d6-9f39-4eaa-b7c3-00965fb85fdf" /> |
+
+
