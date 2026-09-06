@@ -128,21 +128,21 @@ window .view item {
     border-radius: 0;
 }
 
-window flowboxchild:hover,
-window gridview child:hover,
-window columnview row:hover,
-window listview row:hover,
-window .view item:hover {
+nautilus-window flowboxchild:hover,
+nautilus-window gridview child:hover,
+nautilus-window columnview row:hover,
+nautilus-window listview row:hover,
+nautilus-window .view item:hover {
     background-color: alpha(@headerbar_border_color, 0.2);
     border-radius: 0;
 }
 
-window flowboxchild:selected,
-window gridview child:selected,
-window treeview:selected,
-window columnview row:selected,
-window listview row:selected,
-window .view item:selected {
+nautilus-window flowboxchild:selected,
+nautilus-window gridview child:selected,
+nautilus-window treeview:selected,
+nautilus-window columnview row:selected,
+nautilus-window listview row:selected,
+nautilus-window .view item:selected {
     background-color: alpha(@accent_bg_color, 0.15);
     color: @window_fg_color;
     border-radius: 0;
@@ -156,19 +156,19 @@ rubberband, .rubberband {
     border-radius: 0;
 }
 
-window button:not(.flat):not(.suggested-action):not(.destructive-action) {
+nautilus-window button:not(.flat):not(.suggested-action):not(.destructive-action) {
     background-color: @card_bg_color;
     color: @window_fg_color;
     border: 1px solid @headerbar_border_color;
     border-radius: 0;
 }
-window button:hover:not(.flat) {
+nautilus-window button:hover:not(.flat) {
     background-color: shade(@card_bg_color, 1.5); 
     color: @window_fg_color;
     border-radius: 0;
 }
-window button:checked,
-window button:active {
+nautilus-window button:checked,
+nautilus-window button:active {
     background-color: @accent_bg_color;
     color: @accent_fg_color;
     border-radius: 0;
