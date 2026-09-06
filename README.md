@@ -50,14 +50,14 @@ The installer copies the template, the refresh script, and both hooks into place
 2. Install the refresh script:
    ```bash
    mkdir -p ~/.local/bin
-   cp bin/nautilus-gtk-refresh.sh ~/.local/bin/
+   cp nautilus-gtk-refresh.sh ~/.local/bin/
    chmod +x ~/.local/bin/nautilus-gtk-refresh.sh
    ```
 3. Install the hooks:
    ```bash
    mkdir -p ~/.config/omarchy/hooks/theme-set.d ~/.config/omarchy/hooks/font-set.d
-   cp hooks/theme-set.d/nautilus-theme-set.sh ~/.config/omarchy/hooks/theme-set.d/
-   cp hooks/font-set.d/nautilus-font-set.sh   ~/.config/omarchy/hooks/font-set.d/
+   cp nautilus-theme-set.sh ~/.config/omarchy/hooks/theme-set.d/
+   cp nautilus-font-set.sh ~/.config/omarchy/hooks/font-set.d/
    chmod +x ~/.config/omarchy/hooks/theme-set.d/nautilus-theme-set.sh \
              ~/.config/omarchy/hooks/font-set.d/nautilus-font-set.sh
    ```
