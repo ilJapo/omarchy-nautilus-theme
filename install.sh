@@ -10,14 +10,16 @@ cp "$REPO_DIR/gtk.css.tpl" "$HOME/.config/omarchy/themed/gtk.css.tpl"
 
 echo "==> Installing refresh script"
 mkdir -p "$HOME/.local/bin"
-cp "$REPO_DIR/bin/nautilus-gtk-refresh.sh" "$HOME/.local/bin/nautilus-gtk-refresh.sh"
+# Source path fixed: removed /bin/
+cp "$REPO_DIR/nautilus-gtk-refresh.sh" "$HOME/.local/bin/nautilus-gtk-refresh.sh"
 chmod +x "$HOME/.local/bin/nautilus-gtk-refresh.sh"
 
 echo "==> Installing hooks"
 mkdir -p "$HOME/.config/omarchy/hooks/theme-set.d" "$HOME/.config/omarchy/hooks/font-set.d"
-cp "$REPO_DIR/hooks/theme-set.d/nautilus-theme-set.sh" \
+# Source paths fixed: removed /hooks/... directories
+cp "$REPO_DIR/nautilus-theme-set.sh" \
    "$HOME/.config/omarchy/hooks/theme-set.d/nautilus-theme-set.sh"
-cp "$REPO_DIR/hooks/font-set.d/nautilus-font-set.sh" \
+cp "$REPO_DIR/nautilus-font-set.sh" \
    "$HOME/.config/omarchy/hooks/font-set.d/nautilus-font-set.sh"
 chmod +x "$HOME/.config/omarchy/hooks/theme-set.d/nautilus-theme-set.sh" \
          "$HOME/.config/omarchy/hooks/font-set.d/nautilus-font-set.sh"
