@@ -34,6 +34,7 @@ GTK4/libadwaita reads the user stylesheet (`~/.config/gtk-4.0/gtk.css`) only onc
 
 ```bash
 git clone https://github.com/ilJapo/omarchy-nautilus-theme.git
+chmod +x install.sh
 cd omarchy-nautilus-theme
 ./install.sh
 ```
