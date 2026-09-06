@@ -48,7 +48,7 @@
 /* 2. Nautilus Specific Overrides */
 
 /* Dynamic font hook placeholder, ridimensionamento all'85% e pulizia bordi Libadwaita */
-window.nautilus-window {
+window {
     font-family: 'Placeholder', monospace;
     font-size: 85%;
     --headerbar-border-color: transparent;
@@ -57,30 +57,30 @@ window.nautilus-window {
 }
 
 /* Rimuove l'ombra undershoot della top bar */
-window.nautilus-window undershoot.top {
+window undershoot.top {
     background-image: none;
     background-color: transparent;
     box-shadow: none;
 }
 
 /* Ripristina il separatore verticale standard tra sidebar e vista principale */
-window.nautilus-window separator {
+window separator {
     background-color: @headerbar_border_color;
     min-width: 1px;
 }
 
 /* Main View */
-window.nautilus-window,
-window.nautilus-window base,
-.nautilus-window notebook,
-.nautilus-window view {
+window,
+window base,
+ notebook,
+ view {
     background-color: @view_bg_color;
     color: @view_fg_color;
 }
 
 /* Top Bar */
-window.nautilus-window headerbar,
-window.nautilus-window .titlebar {
+window headerbar,
+window .titlebar {
     background-color: @headerbar_bg_color;
     color: @headerbar_fg_color;
     border: none;
@@ -100,49 +100,49 @@ window.nautilus-window .titlebar {
 }
 
 /* Sidebar */
-window.nautilus-window placessidebar {
+window placessidebar {
     background-color: @sidebar_bg_color;
     color: @sidebar_fg_color;
 }
-window.nautilus-window placessidebar row {
+window placessidebar row {
     border-radius: 0;
 }
-window.nautilus-window placessidebar row:selected {
+window placessidebar row:selected {
     background-color: alpha(@accent_bg_color, 0.15);
     color: @accent_color;
     font-weight: normal;
     border-radius: 0;
 }
-window.nautilus-window placessidebar row:hover:not(:selected) {
+window placessidebar row:hover:not(:selected) {
     background-color: alpha(@headerbar_border_color, 0.2);
     border-radius: 0;
 }
 
 /* Main View items / folders (Grid, List, Column views, and Icon View / Grid cells) */
-window.nautilus-window flowboxchild,
-window.nautilus-window .nautilus-view-kanban .card,
-window.nautilus-window gridview child,
-window.nautilus-window columnview row,
-window.nautilus-window listview row,
-window.nautilus-window .view item {
+window flowboxchild,
+window .card,
+window gridview child,
+window columnview row,
+window listview row,
+window .view item {
     border-radius: 0;
 }
 
-window.nautilus-window flowboxchild:hover,
-window.nautilus-window gridview child:hover,
-window.nautilus-window columnview row:hover,
-window.nautilus-window listview row:hover,
-window.nautilus-window .view item:hover {
+window flowboxchild:hover,
+window gridview child:hover,
+window columnview row:hover,
+window listview row:hover,
+window .view item:hover {
     background-color: alpha(@headerbar_border_color, 0.2);
     border-radius: 0;
 }
 
-window.nautilus-window flowboxchild:selected,
-window.nautilus-window gridview child:selected,
-window.nautilus-window treeview:selected,
-window.nautilus-window columnview row:selected,
-window.nautilus-window listview row:selected,
-window.nautilus-window .view item:selected {
+window flowboxchild:selected,
+window gridview child:selected,
+window treeview:selected,
+window columnview row:selected,
+window listview row:selected,
+window .view item:selected {
     background-color: alpha(@accent_bg_color, 0.15);
     color: @window_fg_color;
     border-radius: 0;
@@ -156,31 +156,31 @@ rubberband, .rubberband {
     border-radius: 0;
 }
 
-window.nautilus-window button:not(.flat):not(.suggested-action):not(.destructive-action) {
+window button:not(.flat):not(.suggested-action):not(.destructive-action) {
     background-color: @card_bg_color;
     color: @window_fg_color;
     border: 1px solid @headerbar_border_color;
     border-radius: 0;
 }
-window.nautilus-window button:hover:not(.flat) {
+window button:hover:not(.flat) {
     background-color: shade(@card_bg_color, 1.5); 
     color: @window_fg_color;
     border-radius: 0;
 }
-window.nautilus-window button:checked,
-window.nautilus-window button:active {
+window button:checked,
+window button:active {
     background-color: @accent_bg_color;
     color: @accent_fg_color;
     border-radius: 0;
 }
 
-window.nautilus-window entry {
+window entry {
     background-color: @sidebar_bg_color;
     color: @window_fg_color;
     border: 1px solid @headerbar_border_color;
     border-radius: 0;
 }
-window.nautilus-window entry:focus {
+window entry:focus {
     border-color: @accent_color;
     box-shadow: 0 0 0 2px alpha(@accent_color, 0.3);
     border-radius: 0;
